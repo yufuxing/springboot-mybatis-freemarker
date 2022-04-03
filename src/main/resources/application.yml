@@ -1,0 +1,24 @@
+spring:
+  freemarker:
+    suffix: .ftl
+    template-loader-path: classpath:/templates
+    cache: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/dhp?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+      exclude: templates/**
+
+
+server:
+  port: 8079
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.orm.mybatis.freemarker.entity
+  configuration:
+    map-underscore-to-camel-case: true
