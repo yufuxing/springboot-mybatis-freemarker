@@ -3,6 +3,7 @@ package com.orm.mybatis.freemarker.mapper;
 import com.orm.mybatis.freemarker.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
+
 import java.util.List;
 
 

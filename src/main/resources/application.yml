@@ -22,3 +22,5 @@ mybatis:
   type-aliases-package: com.orm.mybatis.freemarker.entity
   configuration:
     map-underscore-to-camel-case: true
+
+
